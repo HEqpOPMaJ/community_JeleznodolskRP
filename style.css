@@ -750,6 +750,118 @@ nav {
     color: var(--border);
 }
 
+/* ==================== СКАЧАТЬ МОДЫ ==================== */
+.download-mods {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 30px 100px;
+}
+
+.download-card {
+    background: var(--gradient-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    padding: 50px 40px;
+    text-align: center;
+    transition: all var(--transition);
+}
+
+.download-card:hover {
+    border-color: var(--blue-mid);
+    box-shadow: var(--shadow-blue);
+}
+
+.download-icon {
+    font-size: 4rem;
+    margin-bottom: 16px;
+    animation: float-card 4s infinite ease-in-out;
+}
+
+.download-card h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.download-card > p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.download-card strong {
+    color: var(--white);
+}
+
+.download-info-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.download-info-item {
+    text-align: center;
+}
+
+.info-label {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+}
+
+.info-value {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--blue-light);
+}
+
+.btn-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--gradient-primary);
+    color: var(--white);
+    padding: 16px 36px;
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: all var(--transition);
+    box-shadow: var(--shadow-blue);
+    margin-bottom: 20px;
+}
+
+.btn-download:hover {
+    box-shadow: var(--shadow-glow);
+    transform: translateY(-3px);
+}
+
+.download-svg {
+    width: 22px;
+    height: 22px;
+}
+
+.download-hint {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+}
+
+.download-hint code {
+    background: rgba(59, 130, 246, 0.15);
+    padding: 3px 8px;
+    border-radius: 4px;
+    color: var(--blue-light);
+    font-size: 0.8rem;
+}
+
 /* ==================== ПОДВАЛ ==================== */
 footer {
     position: relative;
