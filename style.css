@@ -849,6 +849,19 @@ footer {
     transform: translateY(-3px);
 }
 
+/* Скачать моды */
+.social-btn.download {
+    background: rgba(34, 197, 94, 0.15);
+    border-color: rgba(34, 197, 94, 0.4);
+}
+
+.social-btn.download:hover {
+    background: rgba(34, 197, 94, 0.3);
+    border-color: #22c55e;
+    box-shadow: 0 0 25px rgba(34, 197, 94, 0.4);
+    transform: translateY(-3px);
+}
+
 /* ==================== АДАПТИВ ==================== */
 @media (max-width: 1200px) {
     .team-grid {
