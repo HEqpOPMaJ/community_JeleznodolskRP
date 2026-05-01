@@ -547,14 +547,8 @@ footer {
     text-align: center;
 }
 
-.socials-card {
-    background: var(--gradient-card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-xl);
-    padding: 50px 40px;
-}
-
 .socials-header { margin-bottom: 30px; }
+
 .socials-tag {
     display: inline-block;
     font-size: 0.8rem;
@@ -567,6 +561,7 @@ footer {
     border-radius: 20px;
     margin-bottom: 12px;
 }
+
 .socials-header h2 { font-size: 1.8rem; font-weight: 700; margin-bottom: 8px; }
 .socials-header p { color: var(--text-muted); font-size: 0.95rem; }
 
