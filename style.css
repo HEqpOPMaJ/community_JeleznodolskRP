@@ -43,7 +43,6 @@ body {
     overflow-x: hidden;
 }
 
-/* ==================== ФОН С ЧАСТИЦАМИ ==================== */
 .particles {
     position: fixed;
     top: 0;
@@ -78,7 +77,6 @@ body {
     75% { transform: translateY(-30px) translateX(-40px) scale(1.02); }
 }
 
-/* ==================== ШАПКА ==================== */
 header {
     position: sticky;
     top: 0;
@@ -148,19 +146,10 @@ nav {
     transition: width var(--transition);
 }
 
-.nav-link:hover {
-    color: var(--white);
-}
+.nav-link:hover { color: var(--white); }
+.nav-link.active { color: var(--white); }
+.nav-link.active::after { width: 100%; }
 
-.nav-link.active {
-    color: var(--white);
-}
-
-.nav-link.active::after {
-    width: 100%;
-}
-
-/* ==================== ГЛАВНЫЙ ЭКРАН ==================== */
 .hero {
     position: relative;
     z-index: 1;
@@ -218,11 +207,7 @@ nav {
     margin-bottom: 40px;
 }
 
-.hero-buttons {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-}
+.hero-buttons { display: flex; gap: 16px; flex-wrap: wrap; }
 
 .btn {
     display: inline-flex;
@@ -282,20 +267,10 @@ nav {
     50% { opacity: 0.4; }
 }
 
-.status-separator {
-    margin: 0 10px;
-    color: var(--border);
-}
+.status-separator { margin: 0 10px; color: var(--border); }
+.online-status strong { color: var(--white); }
 
-.online-status strong {
-    color: var(--white);
-}
-
-/* Парящие карточки */
-.hero-visual {
-    position: relative;
-    height: 400px;
-}
+.hero-visual { position: relative; height: 400px; }
 
 .floating-card {
     position: absolute;
@@ -335,11 +310,7 @@ nav {
     background-clip: text;
 }
 
-/* ==================== СЕКЦИИ ОБЩИЕ СТИЛИ ==================== */
-.section-header {
-    text-align: center;
-    margin-bottom: 60px;
-}
+.section-header { text-align: center; margin-bottom: 60px; }
 
 .section-tag {
     display: inline-block;
@@ -361,12 +332,8 @@ nav {
     margin-bottom: 12px;
 }
 
-.section-subtitle {
-    color: var(--text-muted);
-    font-size: 1.05rem;
-}
+.section-subtitle { color: var(--text-muted); font-size: 1.05rem; }
 
-/* ==================== О СЕРВЕРЕ ==================== */
 .about {
     position: relative;
     z-index: 1;
@@ -389,20 +356,9 @@ nav {
     margin-bottom: 20px;
 }
 
-.about-text strong {
-    color: var(--white);
-    font-weight: 600;
-}
-
-.about-stats {
-    display: flex;
-    gap: 30px;
-    margin-top: 30px;
-}
-
-.stat {
-    text-align: center;
-}
+.about-text strong { color: var(--white); font-weight: 600; }
+.about-stats { display: flex; gap: 30px; margin-top: 30px; }
+.stat { text-align: center; }
 
 .stat-value {
     display: block;
@@ -414,16 +370,8 @@ nav {
     background-clip: text;
 }
 
-.stat-label {
-    font-size: 0.8rem;
-    color: var(--text-muted);
-}
-
-.about-cards {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
+.stat-label { font-size: 0.8rem; color: var(--text-muted); }
+.about-cards { display: flex; flex-direction: column; gap: 16px; }
 
 .about-card {
     background: var(--gradient-card);
@@ -439,24 +387,10 @@ nav {
     transform: translateX(5px);
 }
 
-.about-card-icon {
-    font-size: 1.6rem;
-    margin-bottom: 8px;
-}
+.about-card-icon { font-size: 1.6rem; margin-bottom: 8px; }
+.about-card h4 { font-weight: 700; margin-bottom: 6px; color: var(--white); }
+.about-card p { font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; }
 
-.about-card h4 {
-    font-weight: 700;
-    margin-bottom: 6px;
-    color: var(--white);
-}
-
-.about-card p {
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    line-height: 1.5;
-}
-
-/* ==================== ОСОБЕННОСТИ ==================== */
 .features {
     position: relative;
     z-index: 1;
@@ -494,20 +428,9 @@ nav {
     margin-bottom: 12px;
 }
 
-.feature-item h3 {
-    font-weight: 700;
-    font-size: 1.15rem;
-    margin-bottom: 10px;
-    color: var(--white);
-}
+.feature-item h3 { font-weight: 700; font-size: 1.15rem; margin-bottom: 10px; color: var(--white); }
+.feature-item p { color: var(--text-muted); font-size: 0.92rem; line-height: 1.6; }
 
-.feature-item p {
-    color: var(--text-muted);
-    font-size: 0.92rem;
-    line-height: 1.6;
-}
-
-/* ==================== КОМАНДА ==================== */
 .team {
     position: relative;
     z-index: 1;
@@ -522,9 +445,7 @@ nav {
     gap: 20px;
 }
 
-.team-card {
-    perspective: 1000px;
-}
+.team-card { perspective: 1000px; }
 
 .team-card-inner {
     background: var(--gradient-card);
@@ -551,123 +472,11 @@ nav {
     border-color: rgba(59, 130, 246, 0.35);
 }
 
-.team-avatar {
-    font-size: 3rem;
-    margin-bottom: 16px;
-}
+.team-avatar { font-size: 3rem; margin-bottom: 16px; }
+.team-card-inner h3 { font-size: 1rem; font-weight: 700; color: var(--white); margin-bottom: 6px; }
+.team-role { display: block; font-size: 0.8rem; color: var(--blue-light); font-weight: 600; margin-bottom: 10px; }
+.team-card-inner p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; }
 
-.team-card-inner h3 {
-    font-size: 1rem;
-    font-weight: 700;
-    color: var(--white);
-    margin-bottom: 6px;
-}
-
-.team-role {
-    display: block;
-    font-size: 0.8rem;
-    color: var(--blue-light);
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.team-card-inner p {
-    font-size: 0.85rem;
-    color: var(--text-muted);
-    line-height: 1.5;
-}
-
-/* Ютуберы — красный акцент */
-.team-card.youtuber .team-card-inner {
-    border-color: rgba(239, 68, 68, 0.45);
-    background: linear-gradient(160deg, #1f1528, #281a2e);
-    position: relative;
-    overflow: hidden;
-}
-
-.team-card.youtuber .team-card-inner::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle at center, rgba(239, 68, 68, 0.08) 0%, transparent 70%);
-    animation: youtuber-glow 3s infinite ease-in-out;
-}
-
-@keyframes youtuber-glow {
-    0%, 100% { transform: scale(1); opacity: 0.5; }
-    50% { transform: scale(1.3); opacity: 1; }
-}
-
-.team-card.youtuber .team-card-inner:hover {
-    border-color: rgba(239, 68, 68, 0.8);
-    box-shadow: 0 0 35px rgba(239, 68, 68, 0.3);
-    transform: translateY(-6px);
-}
-
-.team-card.youtuber .team-role {
-    color: #f87171;
-}
-
-.team-card.youtuber .team-avatar {
-    transition: transform 0.3s ease;
-}
-
-.team-card.youtuber:hover .team-avatar {
-    animation: wiggle 0.5s infinite ease-in-out;
-}
-
-@keyframes wiggle {
-    0%, 100% { transform: rotate(0deg); }
-    25% { transform: rotate(-5deg); }
-    75% { transform: rotate(5deg); }
-}
-
-/* Кнопка YouTube внутри карточки */
-.youtube-links {
-    margin-top: 16px;
-    opacity: 0;
-    transform: translateY(10px);
-    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-    pointer-events: none;
-}
-
-.team-card.youtuber:hover .youtube-links {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-}
-
-.yt-link-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: linear-gradient(135deg, #ff0000, #cc0000);
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.85rem;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
-}
-
-.yt-link-btn:hover {
-    box-shadow: 0 6px 25px rgba(255, 0, 0, 0.6);
-    transform: translateY(-2px) scale(1.05);
-    background: linear-gradient(135deg, #ff1a1a, #e60000);
-}
-
-.yt-icon {
-    width: 18px;
-    height: 18px;
-    flex-shrink: 0;
-}
-
-/* ==================== НАЧАТЬ ИГРУ ==================== */
 .start {
     position: relative;
     z-index: 1;
@@ -684,16 +493,8 @@ nav {
     text-align: center;
 }
 
-.start-card h2 {
-    font-size: 2rem;
-    font-weight: 800;
-    margin-bottom: 8px;
-}
-
-.start-card > p {
-    color: var(--text-muted);
-    margin-bottom: 30px;
-}
+.start-card h2 { font-size: 2rem; font-weight: 800; margin-bottom: 8px; }
+.start-card > p { color: var(--text-muted); margin-bottom: 30px; }
 
 .ip-box {
     display: flex;
@@ -706,19 +507,8 @@ nav {
     margin-bottom: 20px;
 }
 
-.ip-label {
-    font-size: 0.8rem;
-    color: var(--text-muted);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.ip-box code {
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: var(--white);
-    letter-spacing: 1px;
-}
+.ip-label { font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 2px; }
+.ip-box code { font-size: 1.3rem; font-weight: 700; color: var(--white); letter-spacing: 1px; }
 
 .copy-btn {
     background: var(--gradient-primary);
@@ -732,25 +522,11 @@ nav {
     transition: all var(--transition);
 }
 
-.copy-btn:hover {
-    box-shadow: var(--shadow-glow);
-}
+.copy-btn:hover { box-shadow: var(--shadow-glow); }
+.start-info { color: var(--text-muted); font-size: 0.9rem; }
+.start-info strong { color: var(--white); }
+.dot-sep { margin: 0 8px; color: var(--border); }
 
-.start-info {
-    color: var(--text-muted);
-    font-size: 0.9rem;
-}
-
-.start-info strong {
-    color: var(--white);
-}
-
-.dot-sep {
-    margin: 0 8px;
-    color: var(--border);
-}
-
-/* ==================== ПОДВАЛ ==================== */
 footer {
     position: relative;
     z-index: 1;
@@ -761,7 +537,7 @@ footer {
     font-size: 0.85rem;
 }
 
-/* ==================== СОЦИАЛЬНЫЕ СЕТИ ==================== */
+/* Соцсети */
 .socials {
     position: relative;
     z-index: 1;
@@ -771,24 +547,30 @@ footer {
     text-align: center;
 }
 
-.socials-content h2 {
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-bottom: 10px;
+.socials-card {
+    background: var(--gradient-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    padding: 50px 40px;
 }
 
-.socials-content p {
-    color: var(--text-muted);
-    font-size: 0.95rem;
-    margin-bottom: 35px;
+.socials-header { margin-bottom: 30px; }
+.socials-tag {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--blue-light);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background: rgba(59, 130, 246, 0.1);
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 12px;
 }
+.socials-header h2 { font-size: 1.8rem; font-weight: 700; margin-bottom: 8px; }
+.socials-header p { color: var(--text-muted); font-size: 0.95rem; }
 
-.socials-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    flex-wrap: wrap;
-}
+.socials-buttons { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
 
 .social-btn {
     display: inline-flex;
@@ -804,52 +586,24 @@ footer {
     border: 2px solid transparent;
 }
 
-.social-icon {
-    width: 22px;
-    height: 22px;
-    flex-shrink: 0;
-}
+.social-icon { width: 22px; height: 22px; flex-shrink: 0; }
 
-/* YouTube */
-.social-btn.youtube {
-    background: rgba(255, 0, 0, 0.15);
-    border-color: rgba(255, 0, 0, 0.4);
-}
+.social-btn.youtube { background: rgba(255, 0, 0, 0.15); border-color: rgba(255, 0, 0, 0.4); }
+.social-btn.youtube:hover { background: rgba(255, 0, 0, 0.3); border-color: #ff0000; box-shadow: 0 0 25px rgba(255, 0, 0, 0.4); transform: translateY(-3px); }
 
-.social-btn.youtube:hover {
-    background: rgba(255, 0, 0, 0.3);
-    border-color: #ff0000;
-    box-shadow: 0 0 25px rgba(255, 0, 0, 0.4);
-    transform: translateY(-3px);
-}
+.social-btn.discord { background: rgba(88, 101, 242, 0.15); border-color: rgba(88, 101, 242, 0.4); }
+.social-btn.discord:hover { background: rgba(88, 101, 242, 0.3); border-color: #5865f2; box-shadow: 0 0 25px rgba(88, 101, 242, 0.4); transform: translateY(-3px); }
 
-/* Discord */
-.social-btn.discord {
-    background: rgba(88, 101, 242, 0.15);
-    border-color: rgba(88, 101, 242, 0.4);
-}
+.social-btn.telegram { background: rgba(0, 136, 204, 0.15); border-color: rgba(0, 136, 204, 0.4); }
+.social-btn.telegram:hover { background: rgba(0, 136, 204, 0.3); border-color: #0088cc; box-shadow: 0 0 25px rgba(0, 136, 204, 0.4); transform: translateY(-3px); }
 
-.social-btn.discord:hover {
-    background: rgba(88, 101, 242, 0.3);
-    border-color: #5865f2;
-    box-shadow: 0 0 25px rgba(88, 101, 242, 0.4);
-    transform: translateY(-3px);
-}
+/* Скачать моды */
+.download-section { text-align: center; padding: 20px 30px 40px; }
 
-/* Telegram */
-.social-btn.telegram {
-    background: rgba(0, 136, 204, 0.15);
-    border-color: rgba(0, 136, 204, 0.4);
-}
+.social-btn.download { background: rgba(34, 197, 94, 0.15); border-color: rgba(34, 197, 94, 0.4); }
+.social-btn.download:hover { background: rgba(34, 197, 94, 0.3); border-color: #22c55e; box-shadow: 0 0 25px rgba(34, 197, 94, 0.4); transform: translateY(-3px); }
 
-.social-btn.telegram:hover {
-    background: rgba(0, 136, 204, 0.3);
-    border-color: #0088cc;
-    box-shadow: 0 0 25px rgba(0, 136, 204, 0.4);
-    transform: translateY(-3px);
-}
-
-/* ==================== СПОНСОРЫ ==================== */
+/* Спонсоры */
 .sponsors {
     position: relative;
     z-index: 1;
@@ -864,9 +618,7 @@ footer {
     gap: 24px;
 }
 
-.sponsor-card {
-    perspective: 1000px;
-}
+.sponsor-card { perspective: 1000px; }
 
 .sponsor-card-inner {
     background: var(--gradient-card);
@@ -901,15 +653,8 @@ footer {
     transform: translateY(-5px);
 }
 
-.sponsor-avatar {
-    font-size: 3rem;
-    margin-bottom: 14px;
-    transition: transform 0.3s ease;
-}
-
-.sponsor-card-inner:hover .sponsor-avatar {
-    animation: wiggle 0.5s infinite ease-in-out;
-}
+.sponsor-avatar { font-size: 3rem; margin-bottom: 14px; transition: transform 0.3s ease; }
+.sponsor-card-inner:hover .sponsor-avatar { animation: wiggle 0.5s infinite ease-in-out; }
 
 @keyframes wiggle {
     0%, 100% { transform: rotate(0deg); }
@@ -917,32 +662,14 @@ footer {
     75% { transform: rotate(5deg); }
 }
 
-.sponsor-card-inner h3 {
-    font-size: 1rem;
-    font-weight: 700;
-    color: var(--white);
-    margin-bottom: 6px;
-}
-
-.sponsor-role {
-    display: block;
-    font-size: 0.8rem;
-    color: #f87171;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.sponsor-card-inner p {
-    font-size: 0.85rem;
-    color: var(--text-muted);
-    line-height: 1.5;
-    margin-bottom: 16px;
-}
+.sponsor-card-inner h3 { font-size: 1rem; font-weight: 700; color: var(--white); margin-bottom: 6px; }
+.sponsor-role { display: block; font-size: 0.8rem; color: #f87171; font-weight: 600; margin-bottom: 10px; }
+.sponsor-card-inner p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 16px; }
 
 .sponsor-links {
     opacity: 0;
     transform: translateY(8px);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s;
     pointer-events: none;
 }
 
@@ -963,7 +690,7 @@ footer {
     text-decoration: none;
     font-weight: 600;
     font-size: 0.85rem;
-    transition: all 0.3s ease;
+    transition: all 0.3s;
     box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
 }
 
@@ -972,32 +699,14 @@ footer {
     transform: translateY(-2px) scale(1.05);
 }
 
-.yt-icon {
-    width: 18px;
-    height: 18px;
-    flex-shrink: 0;
-}
+.yt-icon { width: 18px; height: 18px; flex-shrink: 0; }
 
-@media (max-width: 600px) {
-    .sponsors-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* ==================== АДАПТИВ ==================== */
 @media (max-width: 1200px) {
-    .team-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
+    .team-grid { grid-template-columns: repeat(3, 1fr); }
 }
 
 @media (max-width: 1024px) {
-    .hero {
-        grid-template-columns: 1fr;
-        text-align: center;
-        padding: 60px 20px;
-        min-height: auto;
-    }
+    .hero { grid-template-columns: 1fr; text-align: center; padding: 60px 20px; min-height: auto; }
     .hero-visual { display: none; }
     .hero-buttons { justify-content: center; }
     .hero-title { font-size: 2.2rem; }
@@ -1011,4 +720,8 @@ footer {
     .features-grid { grid-template-columns: 1fr; }
     .team-grid { grid-template-columns: 1fr; }
     .hero-title { font-size: 1.7rem; }
+}
+
+@media (max-width: 600px) {
+    .sponsors-grid { grid-template-columns: 1fr; }
 }
